@@ -1,15 +1,24 @@
-<button onclick="showContent()">Show hidden content</button>
-`
-<template>
-  <h1>Hello</h1>
-  <h2>Flower</h2>
-  <img src=".." width="214" height="204">
-</template>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Windows Desktop</title>
+</head>
+<body>
+    <div id="desktop">
+        <div class="icon" onclick="openNotepad()">
+            <img src="/img/notepad_img.png" alt="Notepad">
+            <span>Notepad</span>
+        </div>
+        <div class="icon" onclick="openCalculator()">
+            <img src="calculator-icon.png" alt="Calculator">
+            <span>Calculator</span>
+        </div>
+        <!-- Add more icons as needed -->
+    </div>
 
-<script>
-function showContent() {
-  let temp = document.getElementsByTagName("template")[0];
-  let clon = temp.content.cloneNode(true);
-  document.body.appendChild(clon);
-}
-</script>
+    <script src="script.js"></script>
+</body>
+</html>
