@@ -288,3 +288,6 @@ pre {
   transform: scale(1.5); 
   
   }
+  .inline-img {
+    vertical-align: middle;
+  }
