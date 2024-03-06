@@ -4,11 +4,11 @@
 :root {
   --background: #EBE8DE;
   --main-text: #2F2D25;
-  --lightgray: #EADCD3;
   --darkgray: #111;
   --mediumgray: #87847B;
   --black: #B8B5AB;
   --link: #abacb8;
+  --button: #87847B;
 }
 
 
@@ -23,6 +23,23 @@ body {
   background: var(--background);
   color: var(--main-text);
 }
+
+.dark-mode {
+  --background: #272730;
+  --main-text: #f8f8f2;
+  --darkgray: #8193B6;
+  --mediumgray: #8be9fd;
+  --black: #bd93f9;
+  --link: #ff79c6;
+  --button: #F1FA8C;
+}
+
+.dark-mode body {
+  background: var(--background);
+  color: var(--main-text);
+
+}
+
 
 header {
   display: block;
@@ -114,16 +131,6 @@ footer {
   margin: 0 0.15em;
 }
 
-#toggle {
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
-}
-
-#toggle:hover {
-  color: var(--link);
-  transition: color 0.2s ease-in-out;
-}
-
 pre {
   display: block;
   padding: 0.75rem 1rem;
@@ -143,132 +150,7 @@ pre {
   background-color: #272822;
   color: #ffffff;
 }
-
-/**
- * a11y-dark theme for JavaScript, CSS, and HTML
- * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
- * @author ericwbailey
- */
-
-/* Inline code */
-:not(pre) > code[class*='language-'] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #d4d0ab;
-}
-
-.token.punctuation {
-  color: #fefefe;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #ffa07a;
-}
-
-.token.boolean,
-.token.number {
-  color: #00e0e0;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #abe338;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-  color: #00e0e0;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function {
-  color: #ffd700;
-}
-
-.token.keyword {
-  color: #00e0e0;
-}
-
-.token.regex,
-.token.important {
-  color: #ffd700;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-@media screen and (-ms-high-contrast: active) {
-  code[class*='language-'],
-  pre[class*='language-'] {
-    color: windowText;
-    background: window;
-  }
-
-  :not(pre) > code[class*='language-'],
-  pre[class*='language-'] {
-    background: window;
-  }
-
-  .token.important {
-    background: highlight;
-    color: window;
-    font-weight: normal;
-  }
-
-  .token.atrule,
-  .token.attr-value,
-  .token.function,
-  .token.keyword,
-  .token.operator,
-  .token.selector {
-    font-weight: bold;
-  }
-
-  .token.attr-value,
-  .token.comment,
-  .token.doctype,
-  .token.function,
-  .token.keyword,
-  .token.operator,
-  .token.property,
-  .token.string {
-    color: highlight;
-  }
-
-  .token.attr-value,
-  .token.url {
-    font-weight: normal;
-  }
-}
+/*image collage css code*/
 .thumbnail { 
   top:-50px; 
   left:-35px; 
@@ -291,7 +173,7 @@ pre {
   .inline-img {
     vertical-align: middle;
   }
-/*image collage css code*/
+
   .image-collage {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -302,3 +184,48 @@ pre {
     width: 100%; /* Make sure images take the full width of their container */
     height: auto; /* Maintain aspect ratio */
 }
+/*END image collage css code*/
+/*Dark mode button css code*/
+#toggle {
+  background-color: var(--button);
+  color: var(--background);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px; /* This will make the button rounded */
+  cursor: pointer;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+#toggle:hover {
+  background-color: var(--link);
+  color: var(--background);
+  transform: scale(1.05); /* This will create a zoom effect on hover */
+}
+/*END Dark mode button css code*/
+/*Header css code to make button right align*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*END Header css code to make button right align*/
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--background); /* Set the background color of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--black); /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--link); /* Set the color of the scrollbar thumb on hover */
+}
+/*END Custom scrollbar*/
