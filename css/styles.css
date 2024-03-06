@@ -7,7 +7,7 @@
   --darkgray: #111;
   --mediumgray: #87847B;
   --black: #B8B5AB;
-  --link: #abacb8;
+  --link: #676779;
   --button: #87847B;
 }
 
@@ -37,7 +37,6 @@ body {
 .dark-mode body {
   background: var(--background);
   color: var(--main-text);
-
 }
 
 
@@ -63,12 +62,13 @@ img {
 }
 
 a {
-  color: var(--link);
+  color: var(--darkgray);
+  text-decoration-color: var(--link);
 }
 
 h1,
-h2,
-strong {
+h2
+ {
   color: var(--darkgray);
 }
 
@@ -130,26 +130,6 @@ footer {
 .port-link {
   margin: 0 0.15em;
 }
-
-pre {
-  display: block;
-  padding: 0.75rem 1rem;
-  line-height: 1.5;
-  white-space: pre-wrap;
-
-  overflow-x: auto;
-  font-size: 0.875em;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-
-  text-align: left;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  background-color: #272822;
-  color: #ffffff;
-}
 /*image collage css code*/
 .thumbnail { 
   top:-50px; 
@@ -185,6 +165,7 @@ pre {
     height: auto; /* Maintain aspect ratio */
 }
 /*END image collage css code*/
+
 /*Dark mode button css code*/
 #toggle {
   background-color: var(--button);
@@ -204,6 +185,7 @@ pre {
   transform: scale(1.05); /* This will create a zoom effect on hover */
 }
 /*END Dark mode button css code*/
+
 /*Header css code to make button right align*/
 .header-container {
   display: flex;
@@ -211,6 +193,7 @@ pre {
   align-items: center;
 }
 /*END Header css code to make button right align*/
+
 /* Custom scrollbar */
 body::-webkit-scrollbar {
   width: 10px; /* Set the width of the scrollbar */
@@ -229,3 +212,32 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--link); /* Set the color of the scrollbar thumb on hover */
 }
 /*END Custom scrollbar*/
+
+/*Code for the hover effect on the post links*/
+.post-link {
+  /* Define transition property for smooth animation */
+  transition: all 0.3s ease;
+}
+
+.post-link:hover {
+  background-color: var(--link);
+  color: var(--background);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px; /* This will make the button rounded */
+  cursor: pointer;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+/* Keyframes for animation */
+@keyframes enlarge {
+  from {
+    transform: scale(1); /* Initial size */
+  }
+  to {
+    transform: scale(1.1); /* Enlarged size */
+  }
+}
+

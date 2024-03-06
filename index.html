@@ -2,15 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
 <!-- FAVICONS -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/Toddeh_apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/Toddeh_favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/Toddeh_favicon-16x16.png">
 <link rel="icon" type="image/x-icon" href="/assets/Toddeh_favicon.ico">
-
 <link rel="icon" href="/assets/Toddeh_favicon.ico">
-  
+<link rel="stylesheet" href="/css/slider.css">
 <link rel="stylesheet" href="/css/styles.css">
 <!-- Meta tags for SEO -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +16,6 @@
 <meta name="keywords" content="Toddeh Alexander, Toddeh, Portfolio, Web Development, Front-end, Back-end, HTML, CSS, JavaScript">
 <meta name="author" content="Toddeh Alexander">
 <meta property="og:image"content="/assets/favicon.ico"/>
-
-
 <meta property="og:site_name" content="Toddeh Alexander's Portfolio"/>
 
 <title>Home - Toddeh Alexander</title>  
@@ -29,28 +25,20 @@
 
   <header>
     <div class="header-container">
-      <h1>toddeh alexander </h1>
-      <button id="toggle" class="dark-mode-button">Toggle Dark Mode</button>
+      <h1>Toddeh Alexander </h1>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" class="dark-mode-toggle"/>
+        <span class="slider"></span>
+      </label>
     </div>
   </header>
-  <script src="/JS/darkmode.js"></script>
+<script src="/JS/darkmode.js"></script>
 
 
+<p>A computer science student, open to exploring all types of opportunities.<br> Based in Los Angeles, California.
+<br>More <a class="post-link" href="About/"><strong>about me</strong></a></p>
 
-<p>A computer science student, open to exploring all types of opportunities. <br> Based in Los Angeles, California. 
-<br>More <a href="About/"><strong>about me</strong></a>.</p>
-
-<!-- Added gray highlight for link -->
-<style>
-  a[href="/assets/Toddeh_Alexander_Resume.pdf"] {
-  background-color: var(--button);
-  color: var(--background);
-  padding: 6px 8px;
-  border-radius: 3px;
-  text-decoration: none;
-}
-</style>
-<p><a href="/assets/Toddeh_Alexander_Resume.pdf" target="_blank"><strong>Résumé</a></strong> as of 3/5/2024</p>
+<a class="post-link" href="/assets/Toddeh_Alexander_Resume.pdf" target="_blank"><strong>Resume</a></strong> as of 3/5/2024</p>    <!-- <p>Here's what I'm doing <a href="/now/">now</a>.</p> -->
 
 <hr />
 <h2>Projects 🛠️</h2>
@@ -102,7 +90,5 @@
     <a href="/../.." class="muted">© 2024 | Toddeh Alexander </a>
   </p>
 </footer>
-
-
 </body>
 </html>
