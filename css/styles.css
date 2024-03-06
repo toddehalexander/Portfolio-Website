@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* color palet: #EBE8DE , #B8B5AB, #87847B, #59574E, #2F2D25 - light -> dark */
-
+/* color palet: #EBE8DE , #B8B5AB, #87847B, #59574E, #2F2D25 - light -> dark */   
 :root {
   --background: #EBE8DE;
   --main-text: #2F2D25;
@@ -292,3 +291,14 @@ pre {
   .inline-img {
     vertical-align: middle;
   }
+/*image collage css code*/
+  .image-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.image-collage img {
+    width: 100%; /* Make sure images take the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
