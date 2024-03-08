@@ -16,8 +16,11 @@
 }
 
 .date {
-  margin-bottom: 0px;
-  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Adjust as needed */
+  width: 100%; /* Adjust as needed */
 }
 
   /* Keyframes for animation */
