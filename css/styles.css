@@ -22,8 +22,6 @@ body {
   margin: auto;
   background: var(--background);
   color: var(--main-text);
-  text-align: justify;
-
 }
 
 .dark-mode {
