@@ -46,7 +46,8 @@ body {
   border-radius: 15px; /* Add rounded corners */
   text-decoration: none; /* Remove underline */
   width: 100%;
-  padding: 10 px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .post-link:hover {
