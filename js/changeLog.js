@@ -6,15 +6,15 @@ function toggleContent(event) {
         if (content && content.classList.contains('dropdown-content')) {
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
-                // If the content is being closed, store its state in sessionStorage
+                // If the content is being closed, store its state in localStorage
                 if (content.id === 'newest') {
-                    sessionStorage.setItem('aboutMeClosed', 'true');
+                    localStorage.setItem('aboutMeClosed', 'true');
                 }
             } else {
                 content.style.maxHeight = content.scrollHeight + "px";
-                // If the content is being opened, remove its state from sessionStorage
+                // If the content is being opened, remove its state from localStorage
                 if (content.id === 'newest') {
-                    sessionStorage.removeItem('aboutMeClosed');
+                    localStorage.removeItem('aboutMeClosed');
                 }
             }
         }
@@ -27,7 +27,7 @@ window.onload = function() {
     var firstContent = document.getElementById('newest');
     if (firstContent) {
         // Check if the about me section was previously closed
-        if (sessionStorage.getItem('aboutMeClosed') === 'true') {
+        if (localStorage.getItem('aboutMeClosed') === 'true') {
             firstContent.style.maxHeight = null;
         } else {
             firstContent.style.maxHeight = firstContent.scrollHeight + "px";
