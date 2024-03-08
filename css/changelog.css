@@ -1,21 +1,23 @@
 /* styles.css */
 .dropdown-content {
-    padding-left: 20px;
     transition: max-height 0.5s ease-out;
     max-height: 0;
     overflow: hidden;
+    border-radius: 15px;
     transition: all 0.3s ease;
 }
 .date:hover {
     background-color: var(--link);
     color: var(--background);
-    border: none;
-    padding: 5px 10px;
     border-radius: 50px; /* This will make the button rounded */
     cursor: pointer;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 700;
     transition: all 0.3s ease;
+    user-select: none;
+}
+
+.date {
+  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 
   /* Keyframes for animation */

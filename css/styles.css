@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* color palet: #EBE8DE , #B8B5AB, #87847B, #59574E, #2F2D25 - light -> dark */   
 :root {
@@ -11,9 +11,8 @@
   --button: #87847B;
 }
 
-
 body {
-  font-family: 'Gothic A1', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.5em;
   font-size: 1.1em;
@@ -44,26 +43,17 @@ body {
   /* Define transition property for smooth animation */
   transition: all 0.3s ease;
   border: 1px solid var(--link); /* Add a thin border */
-  border-radius: 20px; /* Add rounded corners */
+  border-radius: 15px; /* Add rounded corners */
   text-decoration: none; /* Remove underline */
   width: 100%;
-  padding: 5px;
+  padding: 10 px;
 }
 
 .post-link:hover {
   background-color: var(--link);
   color: var(--background);
-  border: none;
-  padding: 5px 10px;
-  border-radius: 50px; /* This will make the button rounded */
-  cursor: pointer;
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 700;
+  border-radius: 50px; 
   transition: all 0.3s ease;
-}
-
-strong {
-  padding: 5px;
 }
 
 header {
@@ -72,10 +62,7 @@ header {
   float: left;
 }
 
-h1 {
-  font-size: 2.1em;
-  line-height: 1.2em;
-}
+
 
 hr {
   border-top: 1px solid var(--black);
@@ -91,17 +78,22 @@ a {
   color: var(--darkgray);
 }
 
-h1,
-h2
+h1 {
+  color: var(--main-text)
+}
+
+h1
  {
-  color: var(--darkgray);
+  font-size: 2.1em;
+  line-height: 1.2em;
 }
 
 h2,
 h3 {
   font-size: 1.4em;
-  margin-top: 1.3em;
-  margin-bottom: 0.2em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  
 }
 
 h3 {
@@ -121,10 +113,6 @@ li {
 ul{
   text-align: justify;
 }
-.large {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
 
 @media (max-width: 600px) {
   ul {
@@ -133,8 +121,13 @@ ul{
   }
 }
 
-footer {
+/* footer {
   padding-top: 1em;
+} */
+
+.large {
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 .no-indent ul {
@@ -149,6 +142,8 @@ footer {
 
 .small {
   font-size: 0.8em;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .flex {
@@ -195,25 +190,6 @@ footer {
 }
 /*END image collage css code*/
 
-/*Dark mode button css code*/
-#toggle {
-  background-color: var(--button);
-  color: var(--background);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 50px; /* This will make the button rounded */
-  cursor: pointer;
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-#toggle:hover {
-  background-color: var(--link);
-  color: var(--background);
-  transform: scale(1.05); /* This will create a zoom effect on hover */
-}
-/*END Dark mode button css code*/
 
 /*Header css code to make button right align*/
 .header-container {

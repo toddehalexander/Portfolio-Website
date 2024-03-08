@@ -46,7 +46,7 @@
     /* Define transition property for smooth animation */
     transition: all 0.3s ease;
     border: 1px solid var(--link); /* Add a thin border */
-    border-radius: 20px; /* Add rounded corners */
+    border-radius: 15px; /* Add rounded corners */
     text-decoration: none; /* Remove underline */
     width: 100%;
     padding: 5px;
@@ -55,36 +55,26 @@
   .post-link-main:hover {
     background-color: var(--link);
     color: var(--background);
-    border: none;
-    padding: 5px 10px;
-    border-radius: 50px; /* This will make the button rounded */
-    cursor: pointer;
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 700;
+    border-radius: 50px; 
     transition: all 0.3s ease;
   }
 
-  /* Keyframes for animation */
-  @keyframes enlarge {
-    from {
-      transform: scale(1); /* Initial size */
-    }
-    to {
-      transform: scale(1.1); /* Enlarged size */
-    }
-  }
   /*Center text of the href*/
   .center-text {
     text-align: center;
     display: block;
     font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
-  .post-link-main, .post-link-main-tooltip {
-    /* Other styles... */
-    font-size: 1em; /* Adjust as needed */
-  }
+
 /*to keep the work experiance name and also the date on the same line*/
   .inline-content {
     display: flex;
     align-items: center;
+  }
+
+  .project-description {
+    margin-bottom: 2rem;
+    padding-bottom: 0;
   }
