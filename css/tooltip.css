@@ -29,7 +29,7 @@
     animation: fadeIn 0.5s ease-in-out 1;
     width: 700px; /* Set width as needed  for the image*/ /* Adjust as needed THIS IS WHAT DICTATES HOW LONG THE IMAGE IS*/
     height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional: Add border radius for style */
+    border-radius: 10px; /* Optional: Add border radius for style */
   }
   
   /* Increase the size of the image on hover */
