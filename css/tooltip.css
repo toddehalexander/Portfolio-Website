@@ -3,14 +3,14 @@
 }
 
 /* Add a class to the post links for triggering hover effect */
-.post-link-tooltip {
+.post-link-main-tooltip {
     position: relative; /* Set position relative for proper positioning */
     display: inline-block;
     max-width: 700px /* Adjust as needed THIS IS WHAT DICTATES HOW LONG THE HREF IS*/
   }
   
 /* Tooltip container */
-.post-link-tooltip .tooltip-image {
+.post-link-main-tooltip .tooltip-image {
     display: none; /* Hide the image by default */
     position: absolute; /* Position the image */
     z-index: 999; /* Ensure it's above other elements */
@@ -20,7 +20,7 @@
 }
   
   /* Show the image when hovering over the post link */
-  .post-link-tooltip:hover .tooltip-image {
+  .post-link-main-tooltip:hover .tooltip-image {
     display: block; /* Show the image */
   }
   
@@ -33,7 +33,7 @@
   }
   
   /* Increase the size of the image on hover */
-  .post-link-tooltip:hover .tooltip-image img {
+  .post-link-main-tooltip:hover .tooltip-image img {
     transform: scale(1.5);
   }
   @keyframes fadeIn {
@@ -42,18 +42,17 @@
 }
 
 /*Code for the hover effect on the post links*/
-.post-link {
+.post-link-main {
     /* Define transition property for smooth animation */
     transition: all 0.3s ease;
     border: 1px solid var(--link); /* Add a thin border */
     border-radius: 20px; /* Add rounded corners */
     text-decoration: none; /* Remove underline */
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
   }
   
-  .post-link:hover {
+  .post-link-main:hover {
     background-color: var(--link);
     color: var(--background);
     border: none;
@@ -65,7 +64,7 @@
     transition: all 0.3s ease;
   }
   @media (max-width: 768px) {
-    a.post-link:hover {
+    a.post-link-main:hover {
       /* Reset the hover effects here */
       color: inherit;
       text-decoration: none;
@@ -86,7 +85,7 @@
     display: block;
     font-size: 1em;
   }
-  .post-link, .post-link-tooltip {
+  .post-link-main, .post-link-main-tooltip {
     /* Other styles... */
     font-size: 1em; /* Adjust as needed */
   }

@@ -39,6 +39,32 @@ body {
   color: var(--main-text);
 }
 
+/*Code for the hover effect on the post links*/
+.post-link {
+  /* Define transition property for smooth animation */
+  transition: all 0.3s ease;
+  border: 1px solid var(--link); /* Add a thin border */
+  border-radius: 20px; /* Add rounded corners */
+  text-decoration: none; /* Remove underline */
+  width: 100%;
+  padding: 5px;
+}
+
+.post-link:hover {
+  background-color: var(--link);
+  color: var(--background);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px; /* This will make the button rounded */
+  cursor: pointer;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+strong {
+  padding: 5px;
+}
 
 header {
   display: block;
