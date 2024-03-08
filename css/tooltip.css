@@ -1,0 +1,91 @@
+.tooltip-image {
+    pointer-events: none;
+}
+
+/* Add a class to the post links for triggering hover effect */
+.post-link-tooltip {
+    position: relative; /* Set position relative for proper positioning */
+    display: inline-block;
+    max-width: 700px /* Adjust as needed THIS IS WHAT DICTATES HOW LONG THE HREF IS*/
+  }
+  
+/* Tooltip container */
+.post-link-tooltip .tooltip-image {
+    display: none; /* Hide the image by default */
+    position: absolute; /* Position the image */
+    z-index: 999; /* Ensure it's above other elements */
+    left: 50%; /* Center the image horizontally */
+    top: 100%; /* Position the image below the hyperlink */
+    transform: translateX(-50%); /* Use translate to center the image horizontally */
+}
+  
+  /* Show the image when hovering over the post link */
+  .post-link-tooltip:hover .tooltip-image {
+    display: block; /* Show the image */
+  }
+  
+  /* Ensure the tooltip image doesn't affect layout */
+  .tooltip-image img {
+    animation: fadeIn 0.5s ease-in-out 1;
+    width: 700px; /* Set width as needed  for the image*/ /* Adjust as needed THIS IS WHAT DICTATES HOW LONG THE IMAGE IS*/
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add border radius for style */
+  }
+  
+  /* Increase the size of the image on hover */
+  .post-link-tooltip:hover .tooltip-image img {
+    transform: scale(1.5);
+  }
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/*Code for the hover effect on the post links*/
+.post-link {
+    /* Define transition property for smooth animation */
+    transition: all 0.3s ease;
+    border: 1px solid var(--link); /* Add a thin border */
+    border-radius: 20px; /* Add rounded corners */
+    text-decoration: none; /* Remove underline */
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .post-link:hover {
+    background-color: var(--link);
+    color: var(--background);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px; /* This will make the button rounded */
+    cursor: pointer;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease;
+  }
+  
+  /* Keyframes for animation */
+  @keyframes enlarge {
+    from {
+      transform: scale(1); /* Initial size */
+    }
+    to {
+      transform: scale(1.1); /* Enlarged size */
+    }
+  }
+  /*Center text of the href*/
+  .center-text {
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  .post-link, .post-link-tooltip {
+    /* Other styles... */
+    font-size: 1em; /* Adjust as needed */
+  }
+/*to keep the work experiance name and also the date on the same line*/
+  .inline-content {
+    display: flex;
+    align-items: center;
+  }

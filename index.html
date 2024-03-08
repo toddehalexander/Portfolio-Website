@@ -10,6 +10,10 @@
 <link rel="icon" href="/assets/Toddeh_favicon.ico">
 <link rel="stylesheet" href="/css/slider.css">
 <link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/work-info.css">
+<link rel="stylesheet" href="/css/tooltip.css">
+
+
 <!-- Meta tags for SEO -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Welcome to the portfolio of Toddeh Alexander. Explore my work and skills in web development and various other projects!.">
@@ -24,7 +28,7 @@
 <body>
   <header>
     <div class="header-container">
-      <h1>Toddeh Alexander </h1>
+      <h1>Toddeh Alexander</h1> 
       <label class="switch">
         <input type="checkbox" id="darkModeToggle" class="dark-mode-toggle"/>
         <span class="slider"></span>
@@ -33,56 +37,105 @@
   </header>
 <p>A computer science student, open to exploring all types of opportunities.<br> Based in Los Angeles, California.<br>
 <br>
-More <a class="post-link" href="About/"><strong>about me</strong></a></p>
+  <a class="post-link" href="About/"><strong style = "padding: 5px;">About Me</strong></a></p>
 
-<a class="post-link" href="/assets/Toddeh_Alexander_Resume.pdf" target="_blank"><strong>Resume</a></strong> as of 3/5/2024</p><!-- <p>Here's what I'm doing <a href="/now/">now</a>.</p> -->
+<br>
+
+<a class="post-link"class="post-link post-link-tooltip" href="/assets/Toddeh_Alexander_Resume.pdf" target="_blank"><strong style = "padding: 5px;">Resume</a></strong> as of 3/5/2024</p><!-- <p>Here's what I'm doing <a href="/now/">now</a>.</p> -->
 <script src="/js/darkMode.js"></script>
- 
+<script src="/js/tooltip.js"></script>
 
 <hr />
 <h2>Projects 🛠️</h2>
-<ul>
   
-  <li>
-    <a class="post-link" href="/Project/Ai_Edu/"><strong>AI Educational Chatbot</strong></a> •
+    <a class="post-link post-link-tooltip" href="/Project/Ai_Edu/">
+      <strong class="center-text">AI Educational Chatbot</strong>
+      <div class="tooltip-image">
+        <img src="/assets/ChatBot_Edu.gif" alt="Tooltip Image">
+      </div>
+    </a>
+    <br>
     An educational chatbot that utilizes OpenAi's API to derive and create responses based solely on textbook input.
-  </li>
+    <br><br>
 
-  <li>
-    <a class="post-link" href="/Project/ServerRoom/"><strong>On-Premises Server Room Build</strong></a> •
+    <a class="post-link post-link-tooltip" href="/Project/ServerRoom/">
+      <strong class="center-text">On-Premises Server Room Build</strong>
+      <div class="tooltip-image">
+        <img src="/Work/Kayne/ServerRoom/server2.jpg" alt="Tooltip Image">
+      </div>
+    </a>
+    <br>
     Implemented the plan for the construction and design schema of a 500-square-foot server room.
-  </li>
+    <br><br>
 
-  <li>
-    <a class="post-link" href="/Project/CodeRacer/"><strong>Code Racer</strong></a> • 
-    CodeRacer is a web game for programmers to enhance typing speed and accuracy while learning popular programming algorithms using HTML, CSS, and a unique JS parser.  </li>
+  
+    <a class="post-link post-link-tooltip" href="/Project/CodeRacer/">
+      <strong class="center-text">Code Racer</strong>
+      <div class="tooltip-image">
+        <img src="/assets/CodeRacer.png" alt="Tooltip Image">
+      </div>
+    </a>
+    <br>
+    CodeRacer is a web game for programmers to enhance typing speed and accuracy while learning popular programming algorithms using HTML, CSS, and a unique JS parser.  
+    <br><br>
 
-  <li>
-    <a class="post-link" href="/Project/UniDatabase/"><strong>University Database</strong></a> •
-    A university database system using SQL and PHP to manage professor details, course information, student records, and enrollment data, enabling queries such as listing class details for professors and displaying course sections with enrollment information for students.  </li>
+    <a class="post-link post-link-tooltip" href="/Project/UniDatabase/">
+      <strong class="center-text">University Database</strong>
+      <div class="tooltip-image">
+        <img src="/assets/Database1.jpg" alt="Tooltip Image">
+      </div>
+    </a>
+    <br>
+    A university database system using SQL and PHP to manage professor details, course information, student records, and enrollment data, enabling queries such as listing class details for professors and displaying course sections with enrollment information for students.
+    <br><br>
 
-  <li>
-    <a class="post-link" href="/Project/Recipe/"><strong>Recipe App</strong></a> •
+    <a class="post-link post-link-tooltip" href="/Project/Recipe/">
+      <strong class="center-text">Recipe App</strong>
+      <div class="tooltip-image">
+        <img src="" alt="">
+      </div>
+    </a>
+    <br>
     An iOS app that utilizes a recipe API, offering users many dishes and food options. The app features a shopping cart functionality, allowing users to view and gather the required ingredients for their chosen recipes.
-  </li>
+    <br><br>
 
-  <li>
-    <a class="post-link" href="/Project/Compiler/"><strong>Compiler: Assembly code generator</strong></a> •
+    <a class="post-link post-link-tooltip" href="/Project/Compiler/">
+      <strong class="center-text">Compiler: Assembly code generator</strong>
+      <div class="tooltip-image">
+        <img src="" alt="">
+      </div>
+    </a>
+    <br>
     A compiler that transforms unique input code into assembly code while generating a corresponding symbol table and assembly code for comprehensive program analysis.
-  </li>
-</ul>
+    <br><br>
 
+<!-- End of the Project list-->
+<hr>
 <h2>Work Experience 🖥️</h2>
-<ul>
-  
-  <li><a class="post-link" href="/Work/Kayne/"><strong>Information Technology Technician</strong></a> • Kayne Anderson Rudnick <p class="muted small">Jan 2022 - Aug 2022</p</li>
-  
-  <li><a class="post-link" href="/Work/GCC/"><strong>Student Ambassador</strong></a> • Glendale Community College <p class="muted small">Mar 2021 - Jun 2022</p</li>
 
-  <li><a class="post-link" href="/Work/GUSD/"><strong>Information Technology Support</strong></a> • Glendale Unified School District <p class="muted small">Aug 2019 - Jun 2020</p</li>
+<a class="post-link post-link-tooltip" href="/Work/Kayne/">
+  <strong class="center-text">Information Technology Technician</strong>
+</a>
+<div class="work-info">
+  Kayne Anderson Rudnick
+  <p class="muted small">Jan 2022 - Aug 2022</p>
+</div>
 
+<a class="post-link post-link-tooltip" href="/Work/GCC/">
+  <strong class="center-text">Student Ambassador</strong>
+</a>
+<div class="work-info">
+  Glendale Community College
+  <p class="muted small">Mar 2021 - Jun 2022</p>
+</div>
 
-</ul>
+<a class="post-link post-link-tooltip" href="/Work/GUSD/">
+  <strong class="center-text">Information Technology Support</strong>
+</a>
+<div class="work-info">
+  Glendale Unified School District
+  <p class="muted small">Aug 2019 - Jun 2020</p>
+</div>
 
 <footer>
   <p class="muted small">

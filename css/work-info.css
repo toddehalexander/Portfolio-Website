@@ -1,0 +1,11 @@
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  @media (max-width: 600px) {
+    .work-info {
+      font-size: 0.8em; /* Adjust as needed */
+    }
+  }
