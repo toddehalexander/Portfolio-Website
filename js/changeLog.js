@@ -4,6 +4,7 @@ function toggleContent(event) {
     if (target && (target.classList.contains('date') || (target.parentElement && target.parentElement.classList.contains('date')))) {
         var content = target.classList.contains('date') ? target.nextElementSibling : target.parentElement.nextElementSibling;
         if (content && content.classList.contains('dropdown-content')) {
+            // Check if the dropdown is already open
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;
                 // If the content is being closed, store its state in localStorage
@@ -32,6 +33,5 @@ window.onload = function() {
         } else {
             firstContent.style.maxHeight = firstContent.scrollHeight + "px";
         }
-        firstContent.style.userSelect = "none";
     }
 };
