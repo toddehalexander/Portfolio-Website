@@ -27,11 +27,7 @@ document.addEventListener('click', toggleContent);
 window.onload = function() {
     var firstContent = document.getElementById('newest');
     if (firstContent) {
-        // Check if the about me section was previously closed
-        if (localStorage.getItem('aboutMeClosed') === 'true') {
-            firstContent.style.maxHeight = null;
-        } else {
-            firstContent.style.maxHeight = firstContent.scrollHeight + "px";
-        }
+        // Always open the about me section on window load
+        firstContent.style.maxHeight = firstContent.scrollHeight + "px";
     }
 };
