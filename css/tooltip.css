@@ -21,9 +21,14 @@
   
   /* Show the image when hovering over the post link */
   .post-link-main-tooltip:hover .tooltip-image {
-    display: block; /* Show the image */
+    display: block;
   }
-  
+  @media (max-width: 1050px) {
+    .post-link-main-tooltip:hover .tooltip-image {
+      display: none;
+    }
+  }
+
   /* Ensure the tooltip image doesn't affect layout */
   .tooltip-image img {
     animation: fadeIn 0.5s ease-in-out 1;
