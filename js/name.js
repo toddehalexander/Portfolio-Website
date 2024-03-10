@@ -17,6 +17,6 @@ setTimeout(() => {
     randomLetter.classList.add('bounce');
     setTimeout(() => {
       randomLetter.classList.remove('bounce');
-    }, 400);
+    }, 500);
   }, 2000);
-}, (firstName.length + lastName.length + 1) * 100 + 1000); // Adjust this value as needed
+}, (firstName.length + lastName.length + 1) * 45+ 1500); // Adjust this value as needed
