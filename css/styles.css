@@ -56,14 +56,13 @@ body {
   border-radius: 50px; 
   transition: all 0.3s ease;
 }
+/*END Code for the hover effect on the post links*/
 
 header {
   display: block;
   width: 100%;
   float: left;
 }
-
-
 
 hr {
   border-top: 1px solid var(--black);
@@ -122,20 +121,6 @@ ul{
   }
 }
 
-/* footer {
-  padding-top: 1em;
-} */
-
-.large {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-.no-indent ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 .muted {
   color: var(--mediumgray);
   text-decoration: none;
@@ -146,51 +131,6 @@ ul{
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-.flex {
-  display: 'flex';
-}
-
-.port-link {
-  margin: 0 0.15em;
-}
-/*image collage css code*/
-.thumbnail { 
-  top:-50px; 
-  left:-35px; 
-  display:block; 
-  z-index:999; 
-  cursor: pointer; 
-  -webkit-transition-property: all; 
-  transition-property: all;
-  -webkit-transition-duration: 0.3s; 
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease; 
-  transition-timing-function: ease;
-  width: 100%;
-  } 
-  
-  /*change the number below to scale to the appropriate size*/ 
-  .thumbnail:hover { 
-  transform: scale(1.5); 
-  
-  }
-  .inline-img {
-    vertical-align: middle;
-  }
-
-  .image-collage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px; /* Adjust the gap as needed */
-}
-
-.image-collage img {
-    width: 100%; /* Make sure images take the full width of their container */
-    height: auto; /* Maintain aspect ratio */
-}
-/*END image collage css code*/
-
 
 /*Header css code to make button right align*/
 .header-container {
@@ -219,8 +159,3 @@ body::-webkit-scrollbar-thumb:hover {
 }
 /*END Custom scrollbar*/
 
-@media (max-width: 600px) {
-  .inline-content {
-    font-size: 0.8em; /* Adjust as needed */
-  }
-}

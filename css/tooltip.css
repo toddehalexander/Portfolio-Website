@@ -71,13 +71,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
   }
-
-/*to keep the work experiance name and also the date on the same line*/
-  .inline-content {
-    display: flex;
-    align-items: center;
-  }
-
+  
   .project-description {
     margin-bottom: 2rem;
     padding-bottom: 0;
