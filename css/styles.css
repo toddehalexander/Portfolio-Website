@@ -132,6 +132,28 @@ ul{
   margin-bottom: 0px;
 }
 
+
+.link {
+  position: relative;
+  text-decoration: none; /* Remove default underline */
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--link); /* Use the current text color */
+  transition: width 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+
 /*Header css code to make button right align*/
 .header-container {
   display: flex;
@@ -158,4 +180,5 @@ body::-webkit-scrollbar-thumb:hover {
   background: var(--link); /* Set the color of the scrollbar thumb on hover */
 }
 /*END Custom scrollbar*/
+
 

@@ -10,3 +10,12 @@
       font-size: 0.8em; /* Adjust as needed */
     }
   }
+
+.work-title {
+  display: flex;
+  align-items: center;
+}
+
+.work-image {
+  margin-right: 10px;
+}
