@@ -26,6 +26,11 @@
   user-select: none;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--link);
+}
+
   /* Keyframes for animation */
   @keyframes enlarge {
     from {
