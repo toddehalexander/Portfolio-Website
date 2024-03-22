@@ -9,6 +9,7 @@
     transition: all 0.3s ease;
     text-align: left;
 }
+
 .date:hover {
     background-color: var(--link);
     color: var(--background);
