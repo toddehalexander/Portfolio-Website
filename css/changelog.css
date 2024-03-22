@@ -10,21 +10,12 @@
     text-align: left;
 }
 
-.date:hover {
-    background-color: var(--link);
-    color: var(--background);
-    border-radius: 50px; /* This will make the button rounded */
-    cursor: pointer;
-    transition: all 0.3s ease;
-    user-select: none;
-}
-
 .date {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Adjust as needed */
-  user-select: none;
+  height: 100%; 
+  cursor: pointer;
 }
 
 .underline {
