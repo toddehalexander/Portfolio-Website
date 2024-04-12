@@ -21,6 +21,7 @@ body {
   margin: auto;
   background: var(--background);
   color: var(--main-text);
+  background-size: cover;
 }
 
 .dark-mode {
@@ -34,6 +35,7 @@ body {
 }
 
 .dark-mode body {
+  background-size: cover;
   background: var(--background);
   color: var(--main-text);
 }
