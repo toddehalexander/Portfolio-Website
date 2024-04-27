@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- FAVICONS -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/light/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/light/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/light/favicon-16x16.png">
+<link rel="manifest" href="/favicon/light/site.webmanifest">
+<link rel="icon" href="/favicon/light/favicon.ico" />
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="/css/slider.css">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/work-info.css">
+<link rel="stylesheet" href="/css/tooltip.css">
+<link rel="stylesheet" href="/css/changelog.css">
+<link rel="stylesheet" href="/css/image.css">
+    <!-- Meta tags for SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An educational chatbot that utilizes OpenAi's API to derive and create responses based solely on textbook input.">
+    <meta name="keywords" content="Toddeh Alexander, Toddeh, Portfolio, Web Development, Front-end, Back-end, HTML, CSS, JavaScript">
+    <meta name="author" content="Toddeh Alexander">
+    <meta property="og:image" content="/favicon/light/favicon.ico" />
+    <meta property="og:site_name" content="Toddeh Alexander's Portfolio" />
+    <title>Clash Of Bots - Toddeh Alexander</title>
+</head>
+
+<body>
+    <script src="/js/darkMode.js"></script>
+    <a class="muted small link" href="/">← Toddeh Alexander</a>
+    <h1>Clash of Bots 🛡️⚔️🤖🎮</h1>
+        <span style="font-size: 20px; font-weight:normal;">
+            <img class="inline-img" width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python logo">
+            <img class="inline-img" width="50px"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="matplotlib logo">
+            <img class="inline-img" width="50px"
+                src="https://skillicons.dev/icons?i=bots" alt="discord bots logo">
+            <img class="inline-img" width="50px"
+                src="https://skillicons.dev/icons?i=discord" alt="discord bots logo">
+
+        </span>
+    </h1>
+
+    <p class="muted small">Published on Apr 2024</p>
+
+    <a class="post-link post-link-main-tooltip center-text" href="https://github.com/toddehalexander/ClashOfBots" target="_blank"><strong>GitHub</strong></a>
+
+
+    <hr />
+
+    <h2>Introduction</h2>
+
+    <p>This Python script provides functionalities to interact with the Clash of Clans API. It allows users to retrieve information about players, clans, and clan war leagues.</p>
+    
+    <h2>Features</h2>
+    
+    <ul>
+        <li>Retrieve player information including name, tag, trophies, level, best trophies, clan name, clan tag, and clan level.</li>
+        <li>Get information about clan members including their name, rank, town hall level, and role.</li>
+        <li>Access clan war league information including town hall levels distribution within the clan.</li>
+    </ul>
+    
+    <h2>Discord Screenshot</h2>
+    
+    <img src="/Project\ClashOfBots\assets\Discord_QzIRlL3heM.png" alt="Discord Screenshot">
+    
+    <h2>Python Script Screenshot</h2>
+    
+    <img src="/Project\ClashOfBots\assets\Code_NQvyIqdSCJ.png" alt="Python Script Screenshot">
+    
+    <h2>Matplotlib Graph</h2>
+    
+    <img src="/Project\ClashOfBots\assets\COYG.png" alt="Matplotlib Graph">
+    
+    <h2>Python Script Documentation</h2>
+    
+    <h3>Prerequisites</h3>
+    
+    <ul>
+        <li>Python 3.x installed on your system.</li>
+        <li>Install the required Python packages using pip: pip install requests python-dotenv matplotlib discord.py</li>
+    </ul>
+
+    <h3>Usage</h3>
+    
+    <p><strong>Player Information</strong></p>
+    <ol>
+        <li>Enter choice 1.</li>
+        <li>Provide the player tag when prompted.</li>
+    </ol>
+    
+    <p><strong>Clan Information</strong></p>
+    <ol>
+        <li>Enter choice 2.</li>
+        <li>Provide the clan tag when prompted.</li>
+    </ol>
+    
+    <p><strong>Clan War League Information</strong></p>
+    <ol>
+        <li>Enter choice 3.</li>
+        <li>Provide the clan tag when prompted.</li>
+    </ol>
+    
+    <p><strong>Exit</strong></p>
+    <ol>
+        <li>Enter choice 4.</li>
+    </ol>
+    
+    <h3>Environmental Variables</h3>
+    
+    <p>Ensure to set the following environmental variables:</p>
+    
+    <ul>
+        <li>CLASH_TOKEN: Your Clash of Clans API token.</li>
+        <li>DISCORD_TOKEN: Your Discord bot token (if you're using the Discord bot).</li>
+    </ul>
+    
+    <h3>Running the Script</h3>
+    
+    <p>Navigate to the directory containing the Python script.</p>
+    <p>Run the script using the following command:    <code>python clash_bot.py</code></p>
